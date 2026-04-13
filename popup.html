@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                <span>Seen Hider</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="status-card">
+                <div class="status-label">
+                    <span class="status-text">Protection Status</span>
+                    <span class="status-indicator" id="statusIndicator"></span>
+                </div>
+                
+                <div class="toggle-wrapper">
+                    <label class="toggle">
+                        <input type="checkbox" id="hiderToggle">
+                        <span class="slider"></span>
+                        <span class="toggle-label"></span>
+                    </label>
+                </div>
+                
+                <div class="status-message" id="statusMessage">
+                    Seen receipts are hidden
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <span>Blocks "Seen" status from being sent</span>
+                </div>
+                <div class="info-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 12H4M12 4v16"/>
+                    </svg>
+                    <span>Toggle anytime to enable/disable</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="creator">
+                <svg class="creator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 3L21 8L16 13" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 3L3 8L8 13" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 2L12 22" stroke-linecap="round" />
+                    <path d="M9 7L12 4L15 7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Made by <strong>Ron</strong></span>
+            </div>
+            <div class="version">v1.0.0</div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
